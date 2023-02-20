@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitation Letter</title>
+    <link rel="stylesheet" href="bd_1.css">
+</head>
+<body>
+    <div class="card">
+     <div class="back"></div>
+     <div class="front">
+        <div class="imgset">
+            <img width="100%" src="https://img.freepik.com/premium-vector/happy-19th-birthday-balloons-greeting-card-background-balloons-greeting-card-background-vector_731790-2464.jpg?w=2000">
+        </div>
+     </div>
+     <div class="text-container">
+     <h1>Birthday Celebration</h1>
+     <h2>Dear <span id="greeting"></span>,</h2>
+     <p>You are cordially invited to my 19th birthday party on February 21st, 2023. The party will be held at my house from 5:00 PM. I hope to see.
+        <br><p> Address: Ward(3), Shwe Bo Kyaung Street, Hpa-an, Kayin State, Myanmar</p>
+     <p>Hope your day goes great!</p>
+     <div class="sign"><p>Nang Htel War Oo</p></div>     
+    </div> 
+    </div>
+        
+    <script>
+        var name = localStorage.getItem("name");
+        if (name) {
+          document.getElementById("greeting").innerHTML = name;
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Birthday Invitation Card</title>
+    <link rel="stylesheet" type="text/css" href="bd.css">
+</head>
+<body>
+    <div class="intro">
+      <p class="invite">Warmly Welcome to My Birthday</p>
+        <hr>
+     <label for="nombre">Name: 
+         <input type="text" id="name" name="name" required />
+         <button type="button" onclick="saveName()">Enter</button>
+     </label>
+   </div>
+   <script>
+    function saveName() {
+      var name = document.getElementById("name").value 
+      localStorage.setItem("name", name);
+      window.location.href = "bd_1.html";
+  }
+   
+
+
+  </script>
+
+</body>
+</html>
